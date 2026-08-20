@@ -1,23 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>السياحة في شمال المغرب</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #e8f7ff;
+      color: #123;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #008fc7, #36c5e8);
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #007aa8;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 20px;
+      background: #e8f7ff;
+    }
+
+    nav a:hover {
+      background: #007aa8;
+      color: white;
+    }
+
+    .hero {
+      padding: 45px 20px;
+      text-align: center;
+      background: linear-gradient(
+        rgba(0, 130, 180, 0.75),
+        rgba(0, 130, 180, 0.75)
+      );
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #007aa8;
+      margin-bottom: 25px;
+      font-size: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px 18px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+
+    .card .icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #007aa8;
+      margin-bottom: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      background: #008fc7;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+    }
+
+    .button:hover {
+      background: #006f99;
+    }
+
+    #contact {
+      background: white;
+      margin-top: 20px;
+      border-radius: 15px;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    footer {
+      margin-top: 30px;
+      background: #006f99;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 23px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🌊 السياحة في شمال المغرب</h1>
+    <p>اكتشف أجمل المدن والمناطق والمعالم السياحية</p>
+  </header>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#stay">🏨 الإقامات</a>
+    <a href="#transport">🚗 المواصلات</a>
+    <a href="#activities">🗺️ الأنشطة والجولات</a>
+    <a href="#contact">📞 تواصل معنا</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>مرحبا بكم في شمال المغرب 🇲🇦</h2>
     <p>
-      اكتشف أجمل المدن والشواطئ والطبيعة في شمال المغرب،
-      واحجز إقامتك واستمتع بالأنشطة والجولات السياحية.
+      اكتشف تطوان، شفشاون، طنجة، الحسيمة
+      وأجمل الوجهات السياحية في شمال المغرب.
     </p>
-
-    <div class="buttons">
-      <a class="button" href="#">🏠 الإقامات</a>
-      <a class="button" href="#">🚗 المواصلات</a>
-      <a class="button" href="#">🌊 الأنشطة والجولات</a>
-    </div>
   </section>
 
+  <main class="container">
+
+    <h2 class="section-title">اكتشف خدماتنا</h2>
+
+    <div class="cards">
+
+      <div class="card" id="stay">
+        <div class="icon">🏨</div>
+        <h3>الإقامات</h3>
+        <p>
+          شقق، فنادق، رياض ودور ضيافة
+          في مختلف مناطق شمال المغرب.
+        </p>
+        <a class="button" href="#stay">
+          اكتشف الإقامات
+        </a>
+      </div>
+
+      <div class="card" id="transport">
+        <div class="icon">🚗</div>
+        <h3>المواصلات</h3>
+        <p>
+          تأجير السيارات والطاكسيات
+          والحافلات لخدمة السياح.
+        </p>
+        <a class="button" href="#transport">
+          اكتشف المواصلات
+        </a>
+      </div>
+
+      <div class="card" id="activities">
+        <div class="icon">🗺️</div>
+        <h3>الأنشطة والجولات</h3>
+        <p>
+          جولات سياحية، أماكن طبيعية
+          وأنشطة مختلفة.
+        </p>
+        <a class="button" href="#activities">
+          اكتشف الأنشطة
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="icon">📍</div>
+        <h3>الوجهات السياحية</h3>
+        <p>
+          تعرف على أجمل الأماكن
+          والمعالم في شمال المغرب.
+        </p>
+        <a class="button" href="#home">
+          استكشف الوجهات
+        </a>
+      </div>
+
+    </div>
+
+    <section id="contact">
+      <h2 class="section-title">📞 تواصل معنا</h2>
+
+      <p>
+        هل تحتاج إلى مساعدة في اختيار الإقامة
+        أو المواصلات أو الجولات السياحية؟
+      </p>
+
+      <p style="margin-top:15px;">
+        📱 الهاتف: سيتم إضافته لاحقاً
+      </p>
+
+      <p>
+        📧 البريد الإلكتروني: سيتم إضافته لاحقاً
+      </p>
+    </section>
+
+  </main>
+
   <footer>
-    © 2026 السياحة في شمال المغرب
+    <p>© 2026 السياحة في شمال المغرب 🇲🇦</p>
+    <p>اكتشف • استمتع • سافر</p>
   </footer>
 
 </body>
 </html>
-ممتاز جدًا 👍 الآن أنت في المكان الصحيح.
-الخطوة 2 — ضع كود الصفحة الرئيسية
-في مساحة الكود الكبيرة، احذف أي نص موجود ثم انسخ والصق هذا الكود كاملًا:
-HTML
