@@ -1,18 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شمال المغرب</title>
 
-    <h2 class="section-title">📞 تواصل معنا</h2>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <p>هل لديك سؤال أو تريد إضافة خدمة سياحية؟</p>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eaf8ff;
+      color: #17324d;
+    }
 
-    <p>📱 الهاتف: 06 XX XX XX XX</p>
+    header {
+      background: linear-gradient(135deg, #008fc7, #36c5e8);
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
 
-    <p>📧 البريد الإلكتروني: contact@northmorocco.com</p>
+    header h1 {
+      font-size: 34px;
+      margin: 0 0 10px;
+    }
 
+    header p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    nav {
+      background: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      background: #e8f7ff;
+      color: #007aa8;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .welcome {
+      text-align: center;
+      background: white;
+      padding: 45px 20px;
+    }
+
+    .welcome h2 {
+      color: #008fc7;
+      font-size: 28px;
+    }
+
+    .welcome p {
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #008fc7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .card .icon {
+      font-size: 40px;
+    }
+
+    .card h3 {
+      color: #008fc7;
+    }
+
+    .contact {
+      background: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer {
+      background: #006b91;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🌊 شمال المغرب 🇲🇦</h1>
+    <p>اكتشف جمال الشمال المغربي</p>
+  </header>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#stay">🏨 الإقامة</a>
+    <a href="#transport">🚗 المواصلات</a>
+    <a href="#activities">🗺️ الأنشطة والجولات</a>
+    <a href="#contact">📞 تواصل معنا</a>
+  </nav>
+
+  <section id="home" class="welcome">
+    <h2>مرحبا بكم في شمال المغرب 🇲🇦</h2>
+    <p>
+      منصتك لاكتشاف أجمل الوجهات السياحية في شمال المغرب.
+    </p>
   </section>
 
-  <!-- التذييل -->
+  <section id="stay">
+    <div class="container">
+      <h2>🏨 الإقامة</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🏠</div>
+          <h3>الشقق</h3>
+          <p>شقق للإيجار في شمال المغرب.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏨</div>
+          <h3>الفنادق</h3>
+          <p>اكتشف الفنادق وأماكن الإقامة.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏡</div>
+          <h3>دور الضيافة</h3>
+          <p>إقامة مميزة في المدن السياحية.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="transport">
+    <div class="container">
+      <h2>🚗 المواصلات</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🚘</div>
+          <h3>تأجير السيارات</h3>
+          <p>سيارات للإيجار في شمال المغرب.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🚕</div>
+          <h3>الطاكسي</h3>
+          <p>خدمات التنقل والطاكسي.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🚌</div>
+          <h3>الحافلات</h3>
+          <p>التنقل بين المدن.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="activities">
+    <div class="container">
+      <h2>🗺️ الأنشطة والجولات</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🏖️</div>
+          <h3>الشواطئ</h3>
+          <p>اكتشف أجمل شواطئ الشمال.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🥾</div>
+          <h3>الجولات</h3>
+          <p>جولات سياحية لاكتشاف المنطقة.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏛️</div>
+          <h3>المدينة العتيقة</h3>
+          <p>اكتشف التاريخ والثقافة.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📞 تواصل معنا</h2>
+    <p>📱 الهاتف: 06 XX XX XX XX</p>
+    <p>📧 البريد الإلكتروني: contact@northmorocco.com</p>
+  </section>
+
   <footer>
-    <p>© 2026 شمال المغرب - جميع الحقوق محفوظة</p>
-    <p>اكتشف • احجز • استمتع 🇲🇦</p>
+    <p>© 2026 شمال المغرب - جميع الحقوق محفوظة 🇲🇦</p>
   </footer>
 
 </body>
